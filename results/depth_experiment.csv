@@ -1,0 +1,5 @@
+depth,games,wins,draws,losses,average_nodes_per_game,average_pruned_per_game,average_execution_time_seconds
+1,10,0,10,0,22.5,0.0,0.000137
+2,10,0,10,0,142.5,0.0,0.000697
+3,10,0,10,0,473.0,289.5,0.00172
+4,10,0,10,0,1670.5,650.5,0.006571

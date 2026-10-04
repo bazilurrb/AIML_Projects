@@ -1,0 +1,36 @@
+# Python cache files
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+
+# IDE and editor settings
+
+.vscode/
+.idea/
+
+# Operating system files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+
+*.log
+*.tmp
+
+# Environment variables and secrets
+
+.env
+
+# Keep experimental CSV results in Git
+
+!results/
+!results/*.csv
