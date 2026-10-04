@@ -1,0 +1,21 @@
+Route,Agent,Path,Cost (m),Nodes Explored,Time (s)
+Reception → Library,PATHFINDER,Reception → CRNN Centre → Auditorium Hall → Garden Area → Tower 2 Rear Entry → Library,565,6,0.000937
+Reception → Library,ORBIT,Reception → Tower 2 Front Entry → Tower 2 Rear Entry → Library,310,5,0.000124
+Canteen → New Building 2,PATHFINDER,Canteen → CRNN Centre → Auditorium Hall → New Building 2,370,4,0.000064
+Canteen → New Building 2,ORBIT,Canteen → CRNN Centre → Auditorium Hall → New Building 2,370,6,0.000113
+Library → Canteen,PATHFINDER,Library → Tower 2 Rear Entry → Tower 2 Front Entry → Reception → Canteen,375,5,0.000081
+Library → Canteen,ORBIT,Library → Tower 2 Rear Entry → Tower 2 Front Entry → Reception → Canteen,375,5,0.000071
+Entry Gate 4 → Auditorium Hall,PATHFINDER,Entry Gate 4 → New Building 1 → Garden Area → Auditorium Hall,390,4,0.000047
+Entry Gate 4 → Auditorium Hall,ORBIT,Entry Gate 4 → New Building 1 → Garden Area → Auditorium Hall,390,4,0.000040
+New Building 2 → Entry Gate 1,PATHFINDER,New Building 2 → Auditorium Hall → CRNN Centre → Canteen → Entry Gate 1,460,5,0.000057
+New Building 2 → Entry Gate 1,ORBIT,New Building 2 → Auditorium Hall → CRNN Centre → Canteen → Entry Gate 1,460,7,0.000083
+Playground → Entry Gate 2,PATHFINDER,Playground → Tower 2 Front Entry → Tower 2 Rear Entry → Garden Area → New Building 2 → Entry Gate 2,570,7,0.000124
+Playground → Entry Gate 2,ORBIT,Playground → Tower 2 Front Entry → Tower 2 Rear Entry → Garden Area → New Building 2 → Entry Gate 2,570,7,0.000110
+Entry Gate 1 → CSE Laboratory,PATHFINDER,Entry Gate 1 → Reception → Tower 2 Front Entry → Lift Area → CSE Laboratory,510,9,0.000181
+Entry Gate 1 → CSE Laboratory,ORBIT,Entry Gate 1 → Reception → Tower 2 Front Entry → Tower 2 Rear Entry → Lift Area → CSE Laboratory,470,12,0.000221
+Auditorium Hall → CSE_AKC Seminar Hall,PATHFINDER,Auditorium Hall → Garden Area → Tower 2 Rear Entry → Lift Area → CSE_AKC Seminar Hall,345,6,0.000182
+Auditorium Hall → CSE_AKC Seminar Hall,ORBIT,Auditorium Hall → Garden Area → Tower 2 Rear Entry → Lift Area → CSE_AKC Seminar Hall,345,9,0.000191
+Playground → CSE_Reflexon Room,PATHFINDER,Playground → Tower 2 Front Entry → Lift Area → CSE_Reflexon Room,315,15,0.000361
+Playground → CSE_Reflexon Room,ORBIT,Playground → Tower 2 Front Entry → Tower 2 Rear Entry → Lift Area → CSE_Reflexon Room,275,11,0.000237
+CSE Laboratory → Canteen,PATHFINDER,CSE Laboratory → Lift Area → Tower 2 Front Entry → Reception → Canteen,425,11,0.000236
+CSE Laboratory → Canteen,ORBIT,CSE Laboratory → Lift Area → Tower 2 Rear Entry → Tower 2 Front Entry → Reception → Canteen,385,13,0.000243

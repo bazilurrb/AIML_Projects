@@ -1,0 +1,167 @@
+{
+  "_comment": "CU Technology Campus — Weighted Graph for AI Route Navigator",
+  "_coordinate_system": "Metres from top-left of campus boundary. Scale ≈ 0.6 m/px from satellite image.",
+
+  "nodes": {
+    "Entry Gate 1": {
+      "label": "Entry Gate 1 (G1)",
+      "coordinates": { "x": 66,  "y": 375 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Entry Gate 2": {
+      "label": "Entry Gate 2 (G2) — Bottom Right",
+      "coordinates": { "x": 492, "y": 375 },
+      "accessible": true,
+      "cse_zone": false,
+      "_note": "Shown on assignment map; not a real gate but treated as accessible node."
+    },
+    "Entry Gate 3": {
+      "label": "Entry Gate 2 (G3) — Middle Right",
+      "coordinates": { "x": 495, "y": 225 },
+      "accessible": false,
+      "cse_zone": false,
+      "_note": "Permanently closed / inaccessible. No edges."
+    },
+    "Entry Gate 4": {
+      "label": "Entry Gate 2 (G4) — Top Right",
+      "coordinates": { "x": 495, "y": 33 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Parking Area": {
+      "label": "Parking Area",
+      "coordinates": { "x": 147, "y": 30 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Tower 2 Front Entry": {
+      "label": "Tower 2 Front Entry",
+      "coordinates": { "x": 96,  "y": 99 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Tower 2 Rear Entry": {
+      "label": "Tower 2 Rear Entry",
+      "coordinates": { "x": 276, "y": 72 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Lift Area": {
+      "label": "Lift Area",
+      "coordinates": { "x": 276, "y": 99 },
+      "accessible": true,
+      "cse_zone": false,
+      "_note": "CSE-zone gateway. Only reachable from Tower 2 Front/Rear Entry."
+    },
+    "CSE Laboratory": {
+      "label": "CSE Laboratory",
+      "coordinates": { "x": 198, "y": 84 },
+      "accessible": true,
+      "cse_zone": true
+    },
+    "CSE_Reflexon Room": {
+      "label": "CSE_Reflexon Room",
+      "coordinates": { "x": 102, "y": 129 },
+      "accessible": true,
+      "cse_zone": true
+    },
+    "CSE_AKC Seminar Hall": {
+      "label": "CSE_AKC Seminar Hall",
+      "coordinates": { "x": 201, "y": 132 },
+      "accessible": true,
+      "cse_zone": true
+    },
+    "Library": {
+      "label": "Library",
+      "coordinates": { "x": 345, "y": 66 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Garden Area": {
+      "label": "Garden Area — Technology Campus",
+      "coordinates": { "x": 318, "y": 174 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "New Building 1": {
+      "label": "New Building 1 (Bhagat C. Saraf Group)",
+      "coordinates": { "x": 414, "y": 159 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "New Building 2": {
+      "label": "New Building 2 (Workshop Building)",
+      "coordinates": { "x": 339, "y": 282 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "CRNN Centre": {
+      "label": "CRNN Centre (Nano Technology)",
+      "coordinates": { "x": 207, "y": 198 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Auditorium Hall": {
+      "label": "Auditorium Hall",
+      "coordinates": { "x": 222, "y": 282 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Reception": {
+      "label": "Reception of Calcutta University",
+      "coordinates": { "x": 60,  "y": 225 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Canteen": {
+      "label": "Canteen, CU Technology Campus",
+      "coordinates": { "x": 69,  "y": 288 },
+      "accessible": true,
+      "cse_zone": false
+    },
+    "Playground": {
+      "label": "Playground of Technology Campus",
+      "coordinates": { "x": 30,  "y": 102 },
+      "accessible": true,
+      "cse_zone": false
+    }
+  },
+
+  "edges": [
+    { "from": "Entry Gate 1",        "to": "Canteen",               "weight": 90  },
+    { "from": "Entry Gate 1",        "to": "Reception",             "weight": 150 },
+    { "from": "Canteen",             "to": "Reception",             "weight": 65  },
+    { "from": "Canteen",             "to": "CRNN Centre",           "weight": 165 },
+    { "from": "Reception",           "to": "CRNN Centre",           "weight": 150 },
+    { "from": "Reception",           "to": "Tower 2 Front Entry",   "weight": 130 },
+    { "from": "Tower 2 Front Entry", "to": "Playground",            "weight": 65  },
+    { "from": "Tower 2 Front Entry", "to": "Parking Area",          "weight": 85  },
+    { "from": "Tower 2 Front Entry", "to": "Lift Area",             "weight": 180 },
+    { "from": "Tower 2 Front Entry", "to": "Tower 2 Rear Entry",    "weight": 110 },
+    { "from": "Tower 2 Rear Entry",  "to": "Lift Area",             "weight": 30  },
+    { "from": "Tower 2 Rear Entry",  "to": "Parking Area",          "weight": 135 },
+    { "from": "Tower 2 Rear Entry",  "to": "Garden Area",           "weight": 110 },
+    { "from": "Tower 2 Rear Entry",  "to": "Library",               "weight": 70  },
+    { "from": "Parking Area",        "to": "Tower 2 Rear Entry",    "weight": 135 },
+    { "from": "Lift Area",           "to": "CSE Laboratory",        "weight": 50  },
+    { "from": "Lift Area",           "to": "CSE_Reflexon Room",     "weight": 70  },
+    { "from": "Lift Area",           "to": "CSE_AKC Seminar Hall",  "weight": 60  },
+    { "from": "CSE Laboratory",      "to": "CSE_Reflexon Room",     "weight": 40  },
+    { "from": "CSE Laboratory",      "to": "CSE_AKC Seminar Hall",  "weight": 35  },
+    { "from": "CSE_Reflexon Room",   "to": "CSE_AKC Seminar Hall",  "weight": 50  },
+    { "from": "Library",             "to": "New Building 1",        "weight": 125 },
+    { "from": "Library",             "to": "Entry Gate 4",          "weight": 155 },
+    { "from": "Garden Area",         "to": "New Building 1",        "weight": 105 },
+    { "from": "Garden Area",         "to": "Auditorium Hall",       "weight": 145 },
+    { "from": "Garden Area",         "to": "New Building 2",        "weight": 110 },
+    { "from": "New Building 1",      "to": "Entry Gate 4",          "weight": 140 },
+    { "from": "New Building 2",      "to": "Auditorium Hall",       "weight": 115 },
+    { "from": "New Building 2",      "to": "Entry Gate 2",          "weight": 175 },
+    { "from": "CRNN Centre",         "to": "Auditorium Hall",       "weight": 90  }
+  ],
+
+  "cse_zone_nodes":  ["CSE Laboratory", "CSE_Reflexon Room", "CSE_AKC Seminar Hall"],
+  "cse_entry_nodes": ["Tower 2 Front Entry", "Tower 2 Rear Entry"],
+  "cse_gateway":     "Lift Area"
+}
